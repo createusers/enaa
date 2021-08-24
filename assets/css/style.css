@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+}
+.static {
+  height: 95vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: #f4eeff;
+}
+.static p {
+  color: #464646;
+}
+.dinamic {
+  position: absolute;
+  top: 0;
+  display: block;
+  transform: translateY(92vh);
+  transition: transform 0.8s;
+  background-color: white;
+}
+.dinamic .dn {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
+}
+.dn .header {
+  background-color: #8675a9;
+  height: 8vh !important;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+.dn .content {
+  height: 92vh;
+  background-color: white;
+  box-sizing: border-box;
+}
+.dn.b .header {
+  background-color: #c3aed6;
+}
+.dn.d .header {
+  background-color: #efbbcf;
+}
+.dn.h .content {
+  background-color: #383838;
+  transition: background 0.5s;
+}
+.dn.d .content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: background 0.5s;
+}
